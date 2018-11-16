@@ -89,4 +89,11 @@ At least you need to make the following changes (Contents may differ according t
 
 # 6. Some DEMOs in both Gazebo and Vicon room
 ## Gazebo:
+1. Sine path:
+![sine01](https://user-images.githubusercontent.com/39528117/48602699-a2e31980-e939-11e8-951e-31977e42d6ff.png)
+![sine02](https://user-images.githubusercontent.com/39528117/48602716-b2626280-e939-11e8-8650-13a32c486dac.png)
+![sine03](https://user-images.githubusercontent.com/39528117/48602722-b9897080-e939-11e8-986e-d8c57b6fd23e.png)
+2. New turning Path:
+![new_path](https://user-images.githubusercontent.com/39528117/48602752-cefe9a80-e939-11e8-9048-fbd188fcb68f.png)
+3. Some Videos for Jackal Path-following and Control in Vicon room:
 
