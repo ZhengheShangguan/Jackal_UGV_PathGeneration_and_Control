@@ -1,5 +1,5 @@
 # Jackal_UGV_PathGeneration_and_Control
-**Authors: Jackal UGV Refined Path-Generation and Control** Zhenghe Shangguan
+**Author: Jackal UGV Refined Path-Generation and Control** Zhenghe Shangguan
 
 
 # 1. Main Contribution
