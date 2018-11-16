@@ -87,5 +87,6 @@ At least you need to make the following changes (Contents may differ according t
 - Change 2: in function "int main(int argc, char* argv[])" of "main_gazebo.cpp" 
 1. Change the Subscriber: /odometry/relative -> /vrpn_client_node/jackal/pose ;
 
-# 6. Some DEMOs
+# 6. Some DEMOs in both Gazebo and Vicon room
+## Gazebo:
 
