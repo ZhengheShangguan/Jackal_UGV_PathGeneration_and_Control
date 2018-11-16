@@ -16,7 +16,7 @@
 ## Refined Path Generation:
 - Use interpolation to provide continuous-changing velocities.
 ## Nonlinear Jackal Controller:
-Ref: Kanayama et al., “A stable tracking control method for an autonomous mobile robot”, ICRA1990.
+- Ref: Kanayama et al., “A stable tracking control method for an autonomous mobile robot”, IEEE/RSJ International Workshop on Intelligent Robots and Systems(ICRA1990).
 
 # 3. Prerequisites
 I have tested the library in **14.04** with ROS indigo.
