@@ -88,12 +88,19 @@ At least you need to make the following changes (Contents may differ according t
 1. Change the Subscriber: /odometry/relative -> /vrpn_client_node/jackal/pose ;
 
 # 6. Some DEMOs in both Gazebo and Vicon room
-## Gazebo:
+## In Gazebo:
+- Output the data results then give the plots in MATLAB:
 1. Sine path:
 ![sine01](https://user-images.githubusercontent.com/39528117/48602699-a2e31980-e939-11e8-951e-31977e42d6ff.png)
 ![sine02](https://user-images.githubusercontent.com/39528117/48602716-b2626280-e939-11e8-8650-13a32c486dac.png)
 ![sine03](https://user-images.githubusercontent.com/39528117/48602722-b9897080-e939-11e8-986e-d8c57b6fd23e.png)
 2. New turning Path:
 ![new_path](https://user-images.githubusercontent.com/39528117/48602752-cefe9a80-e939-11e8-9048-fbd188fcb68f.png)
-3. Some Videos for Jackal Path-following and Control in Vicon room:
+
+## In Vicon motion capture room:
+- Some Videos for Jackal Path-following and Control in Vicon room:
+1. Line Path: https://youtu.be/kGmtanI6elk 
+2. Square Path: https://youtu.be/arHTkUabDMQ
+3. Sine Path: https://youtu.be/-NhYXnrl6ow
+4. Taiji pattern Path: https://youtu.be/y8jbGKTB4AQ
 
