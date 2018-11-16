@@ -73,9 +73,8 @@ roslaunch jackal_gazebo jackal_world.launch config:=front_laser
 
 
 # 5. Run in Vicon Room
-```
-(This part received some help from UIUC PhD.Xinke Deng (github.com/XinkeAE))
-```
+
+- This part received some help from UIUC PhD.Xinke Deng (github.com/XinkeAE).
 
 If you want to run this path_generator and controller in Vicon room in real world, you should use Vicon's topic to provide Jackal UGV with its pose in real time.
 At least you need to make the following changes (Contents may differ according to different motion capture systems):
@@ -88,9 +87,9 @@ At least you need to make the following changes (Contents may differ according t
 1. Change the Subscriber: /odometry/relative -> /vrpn_client_node/jackal/pose ;
 
 # 6. Some DEMOs in both Gazebo and Vicon room
-```
-(The photos and videos are taken under the help of UIUC PhD.Xinke Deng (github.com/XinkeAE))
-```
+
+- The photos and videos are taken under the help of UIUC PhD.Xinke Deng (github.com/XinkeAE).
+
 ## In Gazebo:
 - Output the data results then give the plots in MATLAB:
 1. Sine path:
