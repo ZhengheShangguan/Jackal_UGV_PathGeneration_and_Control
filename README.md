@@ -73,16 +73,18 @@ roslaunch jackal_gazebo jackal_world.launch config:=front_laser
 
 
 # 5. Run in Vicon Room
+```
+(This part received some help from UIUC PhD.Xinke Deng (github.com/XinkeAE))
+```
 
-## (This part received some help from UIUC PhD.Xinke Deng (github.com/XinkeAE))
 If you want to run this path_generator and controller in Vicon room in real world, you should use Vicon's topic to provide Jackal UGV with its pose in real time.
 At least you need to make the following changes (Contents may differ according to different motion capture systems):
 
-## Change 1: in function "void Jackal_controller::poseMessageRecieved_odom(const nav_msgs::Odometry & msg)" of "Jackal_controller.cpp"
+- Change 1: in function "void Jackal_controller::poseMessageRecieved_odom(const nav_msgs::Odometry & msg)" of "Jackal_controller.cpp"
 1. nav_msgs::Odometry & msg -> geometry_msgs::PoseStamped & msg ;
 2. Since we changed the msg class, .pose.pose -> .pose ;(6 places total)
 
-## Change 2: in function "int main(int argc, char* argv[])" of "main_gazebo.cpp"
+- Change 2: in function "int main(int argc, char* argv[])" of "main_gazebo.cpp"
 Change the Subscriber: /odometry/relative -> /vrpn_client_node/jackal/pose ;
 
 # 6. Some DEMOs
