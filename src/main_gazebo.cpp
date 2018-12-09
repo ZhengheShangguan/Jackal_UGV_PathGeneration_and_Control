@@ -52,7 +52,6 @@ int main(int argc, char* argv[])
     string name;
     ros::param::get("~param",name);
     read_text(name, path);
-    cout << "Line 499 is ok!" << endl;
 
     // PART I: generate a trajectory with given path from the text file
     jackal_zhenghe::Traj_generator traj_generator = jackal_zhenghe::Traj_generator();    
@@ -60,14 +59,10 @@ int main(int argc, char* argv[])
     vector<vector<double> > path_cont = traj_generator.generate_path(path); 
     // Generated Trajectory
     vector<vector<double> > traj = traj_generator.generate_traj(path_cont);
-    cout << "Line 501 is ok!" << endl;
 
     // PART II: use the controller to subscribe kinematic feedback and publish control command
-    cout << "Line 522 is ok!" << endl;
     ros::Publisher pub_control = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 2000);
-    cout << "Line 524 is ok!" << endl;
     jackal_zhenghe::Jackal_controller jackal_controller = jackal_zhenghe::Jackal_controller(pub_control, path, traj);  
-    cout << "Line 526 is ok!" << endl;
     ros::Subscriber sub = nh.subscribe("/odometry/relative", 2000, &jackal_zhenghe::Jackal_controller::poseMessageRecieved_odom, &jackal_controller);
 
     ros::spin();
